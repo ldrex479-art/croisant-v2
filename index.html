@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maison Croissant — Artisan Croissant Bakery</title>
+  <meta name="description" content="Maison Croissant: artisan croissant, coffee pairing, custom pastry box, dan pre-order harian." />
+  <meta property="og:title" content="Maison Croissant" />
+  <meta property="og:description" content="Artisan croissant dengan French butter, fresh bake setiap 3 jam." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+<base target="_blank">
+</head>
+<body id="top">
+  <svg class="svg-defs" aria-hidden="true">
+    <symbol id="croissant" viewBox="0 0 260 180">
+      <path fill="currentColor" d="M47 133C21 111 15 75 40 49 79 10 181 10 220 49c25 26 19 62-7 84l-27-20c13-15 13-34 0-48-27-25-86-25-112 0-13 14-13 33 0 48l-27 20Z"/>
+      <path d="M76 113c-8-18-6-36 7-52M116 99c-5-18-3-34 8-49M157 99c5-18 3-34-8-49M197 113c8-18 6-36-7-52" fill="none" stroke="rgba(255,255,255,.68)" stroke-width="8" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <header class="nav" data-nav>
+    <a class="brand" href="#top" aria-label="Maison Croissant">
+      <span class="brand-icon"><svg><use href="#croissant" /></svg></span>
+      <span class="brand-text">Maison<em>Croissant</em></span>
+    </a>
+    <nav class="nav-links" data-nav-links>
+      <a href="#menu">Menu</a>
+      <a href="#story">Story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#order">Pre-order</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-button" type="button" data-open-cart aria-label="Buka keranjang">
+        <span>Cart</span>
+        <strong data-cart-count>0</strong>
+      </button>
+      <button class="menu-button" type="button" data-menu-button aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Artisan bakery · Jakarta</p>
+        <h1>Croissant premium dengan <span>French butter</span> dan laminasi presisi.</h1>
+        <p class="hero-text">Dibuat fresh setiap 3 jam: renyah di luar, buttery di dalam, cocok untuk coffee pairing, hampers, dan private event.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Lihat Menu</a>
+          <a class="btn btn-ghost" href="#order">Pre-order Sekarang</a>
+        </div>
+        <div class="hero-stats" aria-label="Statistik bakery">
+          <div><strong>27</strong><span>lapisan dough</span></div>
+          <div><strong>4.9</strong><span>rating pelanggan</span></div>
+          <div><strong>3 jam</strong><span>fresh bake cycle</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art reveal" aria-label="Ilustrasi croissant premium">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="plate"></div>
+        <svg class="hero-croissant" viewBox="0 0 260 180" role="img" aria-label="Croissant signature">
+          <use href="#croissant" />
+        </svg>
+        <div class="glass-card card-one">
+          <span>Signature bake</span>
+          <strong>Butter Classic</strong>
+        </div>
+        <div class="glass-card card-two">
+          <span>Best pairing</span>
+          <strong>Oat Latte</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Highlight produk">
+      <div class="marquee-track">
+        <span>Fresh bake every 3 hours</span>
+        <span>European butter</span>
+        <span>Custom pastry box</span>
+        <span>Coffee pairing</span>
+        <span>Same-day pre-order</span>
+        <span>Fresh bake every 3 hours</span>
+        <span>European butter</span>
+        <span>Custom pastry box</span>
+        <span>Coffee pairing</span>
+        <span>Same-day pre-order</span>
+      </div>
+    </section>
+
+    <section id="menu" class="section section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Menu signature</p>
+        <h2>Pilih croissant favoritmu.</h2>
+        <p>Filter cepat, tambah ke keranjang, lalu checkout dummy untuk simulasi alur order.</p>
+      </div>
+      <div class="filter-bar reveal" role="group" aria-label="Filter menu">
+        <button class="filter-chip active" type="button" data-filter="all">Semua</button>
+        <button class="filter-chip" type="button" data-filter="classic">Classic</button>
+        <button class="filter-chip" type="button" data-filter="sweet">Manis</button>
+        <button class="filter-chip" type="button" data-filter="savory">Gurih</button>
+        <button class="filter-chip" type="button" data-filter="coffee">Coffee pairing</button>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card reveal" data-category="classic coffee">
+          <div class="product-media tone-gold">
+            <span class="badge">Best seller</span>
+            <svg viewBox="0 0 260 180"><use href="#croissant" /></svg>
+          </div>
+          <div class="product-body">
+            <h3>Butter Classic</h3>
+            <p>Laminasi 27 lapis dengan aroma butter premium dan tekstur honeycomb.</p>
+            <div class="product-footer">
+              <span class="price">Rp 28.000</span>
+              <button class="add-to-cart" type="button" data-name="Butter Classic" data-price="28000">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="sweet">
+          <div class="product-media tone-choco">
+            <span class="badge">Rich</span>
+            <svg viewBox="0 0 260 180"><use href="#croissant" /></svg>
+          </div>
+          <div class="product-body">
+            <h3>Chocolate Filled</h3>
+            <p>Croissant cokelat Belgia dengan isian glossy dan rasa intense.</p>
+            <div class="product-footer">
+              <span class="price">Rp 34.000</span>
+              <button class="add-to-cart" type="button" data-name="Chocolate Filled" data-price="34000">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="sweet">
+          <div class="product-media tone-almond">
+            <span class="badge">Nutty</span>
+            <svg viewBox="0 0 260 180"><use href="#croissant" /></svg>
+          </div>
+          <div class="product-body">
+            <h3>Almond Croissant</h3>
+            <p>Frangipane almond, taburan slice almond panggang, dan gula halus.</p>
+            <div class="product-footer">
+              <span class="price">Rp 38.000</span>
+              <button class="add-to-cart" type="button" data-name="Almond Croissant" data-price="38000">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="savory">
+          <div class="product-media tone-cheese">
+            <span class="badge">Gurih</span>
+            <svg viewBox="0 0 260 180"><use href="#croissant" /></svg>
+          </div>
+          <div class="product-body">
+            <h3>Cheese Croissant</h3>
+            <p>Isian cream cheese dan mozzarella dengan aftertaste buttery.</p>
+            <div class="product-footer">
+              <span class="price">Rp 36.000</span>
+              <button class="add-to-cart" type="button" data-name="Cheese Croissant" data-price="36000">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="sweet coffee">
+          <div class="product-media tone-matcha">
+            <span class="badge">Limited</span>
+            <svg viewBox="0 0 260 180"><use href="#croissant" /></svg>
+          </div>
+          <div class="product-body">
+            <h3>Matcha Pistachio</h3>
+            <p>Matcha premium, pistachio crumble, dan glaze tipis yang tidak terlalu manis.</p>
+            <div class="product-footer">
+              <span class="price">Rp 42.000</span>
+              <button class="add-to-cart" type="button" data-name="Matcha Pistachio" data-price="42000">Add</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="coffee classic">
+          <div class="product-media tone-espresso">
+            <span class="badge">Pairing</span>
+            <svg viewBox="0 0 260 180"><use href="#croissant" /></svg>
+          </div>
+          <div class="product-body">
+            <h3>Espresso Butter</h3>
+            <p>Glaze espresso, sea salt tipis, dan aroma sangrai yang kuat.</p>
+            <div class="product-footer">
+              <span class="price">Rp 40.000</span>
+              <button class="add-to-cart" type="button" data-name="Espresso Butter" data-price="40000">Add</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="story" class="story section-pad">
+      <div class="story-visual reveal">
+        <div class="story-card">
+          <svg viewBox="0 0 260 180"><use href="#croissant" /></svg>
+          <div>
+            <span>Since 2026</span>
+            <strong>Small batch, high standard.</strong>
+          </div>
+        </div>
+        <div class="texture texture-a"></div>
+        <div class="texture texture-b"></div>
+      </div>
+      <div class="story-copy reveal">
+        <p class="eyebrow">Our craft</p>
+        <h2>Dough dingin, butter premium, dan bake presisi.</h2>
+        <p>Kami pakai cold fermentation agar rasa lebih dalam dan tekstur lebih ringan. Setiap batch dibatasi supaya kualitas konsisten.</p>
+        <ul class="check-list">
+          <li>French-style lamination dengan European butter</li>
+          <li>No shortcut: proofing lambat, oven harian dikalibrasi</li>
+          <li>Packaging box aesthetic siap hampers</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="gallery" class="section section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2>Aesthetic, clean, premium.</h2>
+        <p>Grid konten siap ganti foto asli produk kamu nanti.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-card tall reveal">
+          <svg viewBox="0 0 260 180"><use href="#croissant" /></svg>
+          <figcaption><span>01</span> Signature Bake</figcaption>
+        </figure>
+        <figure class="gallery-card reveal">
+          <div class="mini-scene"><i></i><b></b><span></span></div>
+          <figcaption><span>02</span> Coffee Pairing</figcaption>
+        </figure>
+        <figure class="gallery-card reveal">
+          <div class="box-scene"><i></i><i></i><i></i><i></i></div>
+          <figcaption><span>03</span> Morning Box</figcaption>
+        </figure>
+        <figure class="gallery-card wide reveal">
+          <div class="event-scene"><span>Private</span><span>Event</span><span>Hampers</span></div>
+          <figcaption><span>04</span> Custom Order</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Reviews</p>
+        <h2>Kata pelanggan.</h2>
+      </div>
+      <div class="review-grid">
+        <blockquote class="review-card reveal">
+          <p>“Almond croissant-nya buttery banget, packaging-nya juga elegan.”</p>
+          <footer>— Sarah, coffee shop owner</footer>
+        </blockquote>
+        <blockquote class="review-card reveal">
+          <p>“Fresh, renyah, dan nggak enek. Cocok untuk meeting box kantor.”</p>
+          <footer>— Dimas, product lead</footer>
+        </blockquote>
+        <blockquote class="review-card reveal">
+          <p>“Matcha pistachio limited-nya wajib coba. Balance dan premium.”</p>
+          <footer>— Nadia, content creator</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="order" class="order section-pad">
+      <div class="order-card reveal">
+        <div>
+          <p class="eyebrow">Pre-order</p>
+          <h2>Amankan batch berikutnya.</h2>
+          <p>Form ini masih frontend dummy. Data tersimpan di localStorage browser.</p>
+        </div>
+        <form id="orderForm" class="order-form">
+          <label>
+            Nama
+            <input type="text" name="name" placeholder="Hendra" required />
+          </label>
+          <label>
+            WhatsApp
+            <input type="tel" name="phone" placeholder="08xxxxxxxxxx" required />
+          </label>
+          <label>
+            Paket
+            <select name="package" required>
+              <option value="Personal Box">Personal Box</option>
+              <option value="Couple Box">Couple Box</option>
+              <option value="Office Box">Office Box</option>
+              <option value="Private Event">Private Event</option>
+            </select>
+          </label>
+          <label>
+            Catatan
+            <textarea name="notes" rows="4" placeholder="Contoh: less sweet, ambil jam 10 pagi"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Kirim Pre-order</button>
+          <p class="form-status" data-form-status role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a class="brand footer-brand" href="#top">
+        <span class="brand-icon"><svg><use href="#croissant" /></svg></span>
+        <span class="brand-text">Maison<em>Croissant</em></span>
+      </a>
+      <p>Artisan croissant untuk harian, hampers, dan event.</p>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <strong>Visit</strong>
+        <span>Jl. Kenanga No. 12, Jakarta</span>
+        <span>Senin–Minggu · 08.00–20.00</span>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <span>hello@maisoncroissant.id</span>
+        <span>@maisoncroissant</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" data-cart-overlay></div>
+  <aside class="cart-drawer" data-cart-drawer aria-label="Keranjang belanja" aria-hidden="true">
+    <div class="cart-head">
+      <div>
+        <p class="eyebrow">Cart</p>
+        <h3>Order kamu</h3>
+      </div>
+      <button class="icon-button" type="button" data-close-cart aria-label="Tutup keranjang">×</button>
+    </div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="cart-foot">
+      <div class="cart-total"><span>Total</span><strong data-cart-total>Rp 0</strong></div>
+      <button class="btn btn-primary btn-block" type="button" data-checkout>Checkout Dummy</button>
+      <small>Checkout demo: order masuk ke localStorage, belum ada payment gateway.</small>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
